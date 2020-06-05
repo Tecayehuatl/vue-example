@@ -4,6 +4,7 @@ import Vuex from "vuex";
 import Axios from "axios";
 import "./shared/shared";
 import router from "./router/app.routing";
+import "./assets/styles/styles.scss";
 
 Vue.config.productionTip = false;
 Vue.use(Vuex);

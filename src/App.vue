@@ -1,12 +1,9 @@
 <template>
   <div id="app">
-    <div>
-      <img alt="Vue logo" src="./assets/logo.png" />
+    <NavigatorComponent />
+    <div class="o-main">
+      <router-view></router-view>
     </div>
-    <div>
-      <NavigatorComponent />
-    </div>
-    <router-view></router-view>
   </div>
 </template>
 
@@ -16,23 +13,12 @@ export default {
   created() {
     this.$http
       .get("https://jsonplaceholder.typicode.com/todos/1")
-      .then(result => {
+      .then((result) => {
         console.warn(
           "This is just a test for retrieve data using axios",
           result.data
         );
       });
-  }
+  },
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

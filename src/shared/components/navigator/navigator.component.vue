@@ -1,13 +1,15 @@
 <template>
-  <nav>
+  <nav class="c-nav">
     <router-link to="/">
       <md-menu md-direction="bottom-start">
-        <md-button md-menu-trigger>Home</md-button>
+        <md-button class="md-raised" md-menu-trigger>Home</md-button>
       </md-menu>
     </router-link>
     <router-link to="/calculator">
       <md-menu md-direction="bottom-end">
-        <md-button md-menu-trigger>Clac</md-button>
+        <md-button class="md-raised" md-menu-trigger
+          >Fibonacci calculator</md-button
+        >
       </md-menu>
     </router-link>
   </nav>
@@ -15,6 +17,6 @@
 
 <script>
 export default {
-  name: "NavigatorComponent"
+  name: "NavigatorComponent",
 };
 </script>

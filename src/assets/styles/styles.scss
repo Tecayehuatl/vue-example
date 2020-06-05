@@ -1,0 +1,38 @@
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  padding: 1em;
+}
+
+.o-wrapper {
+  min-height: 50vh;
+  margin-top: 1em;
+}
+
+.o-main {
+  padding: 1em;
+}
+
+.o-title {
+  margin-bottom: 1em;
+}
+
+.o-results {
+  margin: 2em 0;
+}
+
+.o-calculation {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.c-field {
+  width: 180px;
+}
+
+.c-nav {
+  margin-bottom: 2em;
+}
