@@ -2,7 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import Vuex from "vuex";
 import Axios from "axios";
-import "./shared/material/material";
+import "./shared/shared";
 import router from "./router/app.routing";
 
 Vue.config.productionTip = false;
