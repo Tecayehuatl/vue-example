@@ -1,24 +1,21 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-    <md-button class="md-raised md-primary">Primary</md-button>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
   name: "App",
-  components: {
-    HelloWorld,
-  },
   created() {
     this.$http
       .get("https://jsonplaceholder.typicode.com/todos/1")
       .then((result) => {
-        console.log(result.data);
+        console.warn(
+          "This is just a test for retrieve data using axios",
+          result.data
+        );
       });
   },
 };
